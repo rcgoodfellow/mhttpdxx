@@ -30,7 +30,6 @@ set( CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} \
 include_directories( "${mhttpdxx_SOURCE_DIR}/lib" )
 
 
-install(TARGETS ARCHIVE DESTINATION lib)
 install(DIRECTORY ./lib/ DESTINATION include/mhttpdxx 
   FILES_MATCHING PATTERN "*.hxx"
   PATTERN "build" EXCLUDE)
